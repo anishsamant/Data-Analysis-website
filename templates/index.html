@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DATA ANALYSIS MADE EASY</title>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/static/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="google-site-verification" content="bso13zSs6Li626FrInMOtHev_ehmW_iQ_8rSZef1ef0" />
+	<meta name="p:domain_verify" content="b1be9bdbb2324cc3fd1ea0492e9d4683"/>
+
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-66231230-1', 'auto');
+	  ga('send', 'pageview');
+    </script>
+
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/javascript" href="/static/js/svg.jquery.js">
+	<link rel="stylesheet" type="text/javascript" href="/static/js/pygal-tooltips.js">
+
+	<style>
+		a {
+	    color: #008D6C;
+		}
+		@media (min-width:992px) {
+		#aside {
+			width:250px;
+		}}
+    </style>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+		<nav style="background-color:#FFF">
+			<div class="nav-wrapper container">
+				<a href="#" data-activates="navsidebar" class="button-collapse" style="color:#000"><i class="mdi-navigation-menu"></i></a>
+                <a href="/" class="brand-logo left" style="color:#0C2969">DATA ANALYSIS</a>
+
+                <ul class="right hide-on-med-and-down">
+            <!--<li><a href="/beta/" style='color:#000'>In Beta</a></li>-->
+                    <li><a href="/" style='color:#000'>Home</a></li>
+                    <li><a href="/login/" style='color:#000'>Login</a></li>
+                    <li><a href="/register/" style='color:#000'>Register</a></li>
+                </ul>
+			</div>
+		</nav>
+	</div>
+
+    <div class="container-fluid" style='padding-left:10px;padding-right:10px'>
+        <br>
+        <div class='container'>
+            <div class='card'>
+                <div class='card-content'>
+                    <p>Here is a place you can analyse your dataset! <a href="/register/" style="color:#9ECEE0">Create an account</a> or <a href="/login/" style="color:#9ECEE0">Log in</a> to upload your own datasets.</p>
+                </div>
+            </div>
+
+            <div class='card'>
+                <div class='card-content'>
+                    <h6 style="color:#0C2969">Samples and Examples:</h6><br>
+                    <div class='row'>
+                        <div class='col s12 m6 l4'>
+                            <a href="cervical_cancer" class='btn' style='background-color:#12AFF0'>CERVICAL CANCER</a><br><br>
+                            <p>A typical time-series type of data. Illustrates the graphing, comparing, and forecasting capabilities.</p><br><br>
+                        </div>
+
+                        <div class='col s12 m6 l4'>
+                            <a href='iris_data' class='btn' style='background-color:#12AFF0'>Iris data</a><br><br>
+                            <p>Non time-series data, mainly to either be filtered or predicted with. Try the prediction section in the Analysis tab, to predict a Class based on measurements you input.</p><br><br>
+                        </div>
+
+                        <div class='col s12 m6 l4'>
+                            <a href='winequality_red' class='btn' style='background-color:#12AFF0'>RED WINE</a><br><br>
+                            <p>Another time-series dataset with many related data points. Can be used graphing, comparing, forecasting, and predicting.</p><br><br>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='col s12 m6 l4'>
+                            <a href='breast_cancer_wisconsin' class='btn' style='background-color:#12AFF0'>BREAST CANCER</a><br><br>
+                            <p>A typical time-series type of data. Illustrates the graphing, comparing, and forecasting capabilities.</p><br><br>
+                        </div>
+
+                        <div class='col s12 m6 l4'>
+                            <a href='hepatatis' class='btn' style='background-color:#12AFF0'>HEPATATIS</a><br><br>
+                            <p>Non time-series data, mainly to either be filtered or predicted with. Try the prediction section in the Analysis tab, to predict a Class based on measurements you input.</p><br><br>
+                        </div>
+
+                        <div class='col s12 m6 l4'>
+                            <a href='winequality_white' class='btn' style='background-color:#12AFF0'>WHITE WINE</a><br><br>
+                            <p>Another time-series dataset with many related data points. Can be used graphing, comparing, forecasting, and predicting.</p><br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-content'>
+                        <h6>What is Data Analysis?</h6><br>
+                        <p>Here is a short video explaining the process for data analysis using machine learning</p><br>
+                        <div class="video-container">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/taznbPP3YMU" frameborder="5" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

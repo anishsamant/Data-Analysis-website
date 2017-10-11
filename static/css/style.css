@@ -1,0 +1,63 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: small;
+    color: #000000;
+}
+
+#dropbox {
+    border: 2px dashed #14BE96;
+    padding: 20px;
+}
+
+#dropbox.active {
+    border: 4px dashed #2b544b;
+}
+
+.progress-trough {
+    border: 1px solid #000000;
+    height: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
+    background-color: #2b544b;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.align{
+    text-align:left;
+}
+
+h3{
+    text-align:center;
+}
+
+    a {
+    color: {{html_settings[3]}};
+    }
+    a:hover {
+    color: {{html_settings[4]}};
+    }
