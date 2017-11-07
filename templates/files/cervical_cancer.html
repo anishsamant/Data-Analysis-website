@@ -80,7 +80,7 @@
                         <li class="tab col"><a href="#mainGOOG-NASDAQ_GOOGL" class='active' style="color:#353680"><b>Dataset</b></a></li>
                         <li class="tab col"><a href="#analysisGOOG-NASDAQ_GOOGL" style="color:#353680"><b>Analysis</b></a></li>
                         <li class="tab col"><a href="#basicstatsGOOG-NASDAQ_GOOGL" style="color:#353680"><b>Stats</b></a></li>
-                        <li class="tab col"><a href="#modGOOG-NASDAQ_GOOGL" style="color:#353680"><b>Prediction</b></a></li>
+                        <li class="tab col"><a href="#modGOOG-NASDAQ_GOOGL" style="color:#353680"><b>Graph</b></a></li>
                         <li class="tab col s1 m1 l1"></li>
                     </ul>
                 </div>
@@ -121,12 +121,24 @@
 					</div>
 
 
-					<!-- PREDICTION HERE -->
+					<!-- GRAPH HERE-->
 					<div role="tabpanel" class="tab-pane fade" id="modGOOG-NASDAQ_GOOGL">
 						<br><br><br>
 
 					<p>
-
+						<br><br>
+						<hr>
+						<h3>
+							HISTOGRAM
+						</h3>
+						<hr>
+						<img src="static/histcer.png" alt="graph" width="1400" height="600">
+						<hr>
+						<h3>
+							SCATTER PLOT
+						</h3>
+						<hr>
+						<img src="static/scatcer.png" alt="graph" width="1400" height="600">
 					</p>
 
 					</div>
@@ -168,8 +180,8 @@
 						   // get bar chart canvas
 						   var mychart = document.getElementById("chartmax").getContext("2d");
 
-						   steps = 10
-						   max = 25
+						   steps = 2
+						   max = 2
 						   // draw bar chart
 						   new Chart(mychart).Bar(barData, {
 								scaleOverride: true,
@@ -215,8 +227,8 @@
 						   // get bar chart canvas
 						   var mychart = document.getElementById("chartmin").getContext("2d");
 
-						   steps = 2
-						   max = 2
+						   steps = 1
+						   max = 1
 						   // draw bar chart
 						   new Chart(mychart).Bar(barData, {
 								scaleOverride: true,
@@ -261,8 +273,8 @@
 						   // get bar chart canvas
 						   var mychart = document.getElementById("chartavg").getContext("2d");
 
-						   steps = 10
-						   max = 25
+						   steps = 1
+						   max = 1
 						   // draw bar chart
 						   new Chart(mychart).Bar(barData, {
 								scaleOverride: true,

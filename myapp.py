@@ -64,10 +64,18 @@ def cervical_cancer():
 
     print(predictions[0:10])
 
-    #df.hist()
-    #df.plot(kind='density', subplots=True, layout=(4, 5), sharex=False)  # curve graph
-    #scatter_matrix(df)  # scatter matrix
-    #plt.show()
+    '''df.hist()  # histogram
+    plt.tight_layout()
+    fig = plt.gcf()
+    fig.set_size_inches(30, 30)
+    fig.savefig('static/histcer.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)
+
+    scatter_matrix(df)  # scatter matrix
+    fig = plt.gcf()
+    fig.set_size_inches(20, 20)
+    fig.savefig('static/scatcer.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)'''
 
     return render_template("files/cervical_cancer.html",
                            dataset=df,
@@ -110,6 +118,19 @@ def iris_data():
     stat=df.describe()     #shows stats of per colomn
     correlation=df.corr()  # shows co-relation between each pir of attributes
 
+    '''df.hist()  # histogram
+    plt.tight_layout()
+    fig = plt.gcf()
+    fig.set_size_inches(30, 30)
+    fig.savefig('static/histiri.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)
+
+    scatter_matrix(df)  # scatter matrix
+    fig = plt.gcf()
+    fig.set_size_inches(20, 20)
+    fig.savefig('static/scatiri.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)'''
+
     return render_template("files/iris_data.html",
                            dataset=df,
                            statobj=stat,correlationobj=correlation,
@@ -150,6 +171,19 @@ def winequality_red():
     #STATS
     stat=df.describe()     #shows stats of per colomn
     correlation=df.corr()  # shows co-relation between each pir of attributes
+
+    '''df.hist()  # histogram
+    plt.tight_layout()
+    fig = plt.gcf()
+    fig.set_size_inches(30, 30)
+    fig.savefig('static/histred.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)
+
+    scatter_matrix(df)  # scatter matrix
+    fig = plt.gcf()
+    fig.set_size_inches(20, 20)
+    fig.savefig('static/scatred.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)'''
 
     return render_template("files/winequality_red.html",
                            dataset=df,
@@ -192,6 +226,19 @@ def winequality_white():
     stat=df.describe()     #shows stats of per colomn
     correlation=df.corr()  # shows co-relation between each pir of attributes
 
+    '''df.hist()  # histogram
+    plt.tight_layout()
+    fig = plt.gcf()
+    fig.set_size_inches(30, 30)
+    fig.savefig('static/histwhi.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)
+
+    scatter_matrix(df)  # scatter matrix
+    fig = plt.gcf()
+    fig.set_size_inches(20, 20)
+    fig.savefig('static/scatwhi.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)'''
+
     return render_template("files/winequality_white.html",
                            dataset=df,
                            statobj=stat,correlationobj=correlation,
@@ -232,6 +279,19 @@ def breast_cancer_winconsin():
     #STATS
     stat=df.describe()     #shows stats of per colomn
     correlation=df.corr()  # shows co-relation between each pir of attributes
+
+    '''df.hist()  # histogram
+    plt.tight_layout()
+    fig = plt.gcf()
+    fig.set_size_inches(30, 30)
+    fig.savefig('static/histbre.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)
+
+    scatter_matrix(df)  # scatter matrix
+    fig = plt.gcf()
+    fig.set_size_inches(20, 20)
+    fig.savefig('static/scatbre.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)'''
 
     return render_template("files/breast_cancer_wisconsin.html",
                            dataset=df,
@@ -286,6 +346,19 @@ def hepatatis():
     #STATS
     stat=df.describe()     #shows stats of per column
     correlation=df.corr()  # shows co-relation between each pir of attributes
+
+    '''df.hist()  # histogram
+    plt.tight_layout()
+    fig = plt.gcf()
+    fig.set_size_inches(30, 30)
+    fig.savefig('static/histhep.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)
+
+    scatter_matrix(df)  # scatter matrix
+    fig = plt.gcf()
+    fig.set_size_inches(20, 20)
+    fig.savefig('static/scathep.png', dpi=100)
+    fig.set_size_inches(20, 20, forward=True)'''
 
     return render_template("files/hepatatis.html",
                            dataset=df,
